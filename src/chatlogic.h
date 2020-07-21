@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include "chatgui.h"
+#include <memory>
 
 // forward declarations
 class ChatBot;
@@ -15,7 +16,7 @@ class ChatLogic
 private:
     //// STUDENT CODE
     ////
-
+	//Changing to vector of exclusive smart pointer (unique_ptr)
     // data handles (owned)
     std::vector<std::unique_ptr<GraphNode>> _nodes;
     std::vector<GraphEdge *> _edges;
